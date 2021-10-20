@@ -1,4 +1,4 @@
-package com.marcelo.roomcoroutines.ui.start
+package com.marcelo.roomcoroutines.ui.fragment.start
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -23,7 +23,7 @@ class StartFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         btnNext.setOnClickListener {
-            findNavController().navigateWithAnimations(R.id.show_to_profileFragment)
+            findNavController().navigateWithAnimations(R.id.show_to_loginFragment)
         }
     }
 }
