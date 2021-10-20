@@ -13,8 +13,10 @@ import kotlinx.android.synthetic.main.fragment_start.*
 class StartFragment : Fragment() {
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?,): View?
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?,
+    ): View?
     {
         return inflater.inflate(R.layout.fragment_start, container, false)
     }
@@ -23,7 +25,7 @@ class StartFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         btnNext.setOnClickListener {
-            findNavController().navigateWithAnimations(R.id.show_to_loginFragment)
+            findNavController().navigateWithAnimations(R.id.show_to_profileFragment)
         }
     }
 }

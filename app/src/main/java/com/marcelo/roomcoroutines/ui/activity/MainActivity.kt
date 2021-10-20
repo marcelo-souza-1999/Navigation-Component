@@ -20,7 +20,6 @@ class MainActivity : AppCompatActivity(){
         setContentView(R.layout.activity_main)
 
         setupToolbar()
-        setupFragments()
     }
 
     private fun setupToolbar() {
@@ -33,9 +32,5 @@ class MainActivity : AppCompatActivity(){
 
     override fun onSupportNavigateUp(): Boolean {
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
-    }
-
-    private fun setupFragments() {
-
     }
 }

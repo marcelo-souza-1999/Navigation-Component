@@ -7,16 +7,27 @@ import com.marcelo.roomcoroutines.R
 class LoginViewModel : ViewModel() {
 
     sealed class AuthenticationState {
-        class InvalidAuth(val fields: List<Pair<String,Int>>) : AuthenticationState() {
-
-        }
+        object Unauthenticated: AuthenticationState()
+        object Authenticated: AuthenticationState()
+        class InvalidAuth(val fields: List<Pair<String,Int>>) : AuthenticationState()
     }
 
     val authenticationState = MutableLiveData<AuthenticationState>()
 
+    var username: String = ""
+
+    init {
+        refuseAuthentication()
+    }
+
+    fun refuseAuthentication () {
+        authenticationState.value = AuthenticationState.Unauthenticated
+    }
+
     fun authentication(username: String, passowrd: String) {
         if (isValidForm(username, passowrd)) {
-
+            this.username = username
+            authenticationState.value = AuthenticationState.Authenticated
         }
     }
 

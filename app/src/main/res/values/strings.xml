@@ -12,4 +12,8 @@
     <string name="login_button_text_sign_up">Cadastrar-se</string>
     <string name="login_input_layout_error_invalid_username">Nome de usuário inválido</string>
     <string name="login_input_layout_error_invalid_password">Senha inválida</string>
+    <string name="login_title_action_bar">Faça seu Login</string>
+
+    <!-- Strings in Profile Fragment -->
+    <string name="text_welcome_profile">Welcome, %1$s</string>
 </resources>

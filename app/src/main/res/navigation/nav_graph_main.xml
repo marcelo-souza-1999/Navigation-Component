@@ -13,9 +13,6 @@
         <action
             android:id="@+id/show_to_profileFragment"
             app:destination="@id/profileFragment" />
-        <action
-            android:id="@+id/show_to_loginFragment"
-            app:destination="@id/loginFragment" />
     </fragment>
 
     <fragment
@@ -26,6 +23,6 @@
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.marcelo.roomcoroutines.ui.fragment.login.LoginFragment"
-        android:label="login_fragment"
+        android:label="@string/login_title_action_bar"
         tools:layout="@layout/login_fragment" />
 </navigation>
