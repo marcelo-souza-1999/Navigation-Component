@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/startFragment"
         android:name="com.marcelo.roomcoroutines.ui.start.StartFragment"
-        android:label="fragment_start"
+        android:label="@string/start_title_action_bar"
         tools:layout="@layout/fragment_start">
         <action
             android:id="@+id/show_to_profileFragment"
@@ -18,6 +18,6 @@
     <fragment
         android:id="@+id/profileFragment"
         android:name="com.marcelo.roomcoroutines.ui.profile.ProfileFragment"
-        android:label="fragment_profile"
+        android:label="@string/profile_title_action_bar"
         tools:layout="@layout/fragment_profile" />
 </navigation>

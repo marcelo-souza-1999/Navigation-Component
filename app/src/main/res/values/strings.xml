@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">Room Coroutines</string>
+    <!-- Strings in Start Fragment -->
+    <string name="start_title_action_bar">Início</string>
+    <string name="text_btn_start_fragment">Next</string>
+    <string name="profile_title_action_bar">Perfil</string>
 
 </resources>
