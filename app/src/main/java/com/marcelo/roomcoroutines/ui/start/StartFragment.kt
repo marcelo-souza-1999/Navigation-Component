@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.marcelo.roomcoroutines.R
+import com.marcelo.roomcoroutines.extensions.navigateWithAnimations
 import kotlinx.android.synthetic.main.fragment_start.*
 
 class StartFragment : Fragment() {
@@ -21,8 +22,8 @@ class StartFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        btnNext.setOnClickListener {click ->
-            findNavController().navigate(R.id.show_to_profileFragment)
+        btnNext.setOnClickListener {
+            findNavController().navigateWithAnimations(R.id.show_to_profileFragment)
         }
     }
 }
