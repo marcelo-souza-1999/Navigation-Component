@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Room Coroutines</string>
+    <string name="app_name">Navigation Component</string>
     <string name="btn_next">Next</string>
     <string name="btn_finish">Finalizar</string>
     <!-- Strings in Start Fragment -->
@@ -24,10 +24,10 @@
     <string name="profile_data_input_layout_error_invalid_name">Nome</string>
     <string name="profile_data_input_layout_error_invalid_bio">Bio inválida</string>
     <!-- Strings in Password Fragment -->
-    <string name="choose_credentials_action_bar_title">Insira suas Credenciais</string>
+    <string name="choose_credentials_action_bar_title">Credenciais</string>
     <string name="choose_credentials_input_layout_hint_username">Nome</string>
     <string name="choose_credentials_input_layout_hint_password">Senha</string>
     <string name="choose_credentials_input_layout_error_invalid_username">Nome inválido</string>
     <string name="choose_credentials_input_layout_error_invalid_password">Senha inválida</string>
-    <string name="choose_credentials_text_name">%1$s, insira suas credenciais</string>
+    <string name="choose_credentials_text_name">%1$s, escolha suas credenciais</string>
 </resources>

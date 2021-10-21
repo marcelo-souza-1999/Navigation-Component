@@ -32,7 +32,7 @@ class ProfileFragment : Fragment() {
     }
 
     private fun checkStatusLogin() {
-        loginViewModel.authenticationState.observe(viewLifecycleOwner, {authState->
+        loginViewModel.authenticationStateEvent.observe(viewLifecycleOwner, {authState->
             when (authState) {
                 is LoginViewModel.AuthenticationState.Authenticated -> {
                     txtNameProfile.text = getString(R.string.text_welcome_profile, loginViewModel.username)

@@ -80,9 +80,7 @@ class RegistrationViewModel : ViewModel() {
     companion object {
         val INPUT_NAME = "INPUT_NAME" to R.string.profile_data_input_layout_error_invalid_name
         val INPUT_BIO = "INPUT_BIO" to R.string.profile_data_input_layout_error_invalid_bio
-        val INPUT_USERNAME =
-            "INPUT_USERNAME" to R.string.choose_credentials_input_layout_error_invalid_username
-        val INPUT_PASSWORD =
-            "INPUT_PASSWORD" to R.string.choose_credentials_input_layout_error_invalid_password
+        val INPUT_USERNAME = "INPUT_USERNAME" to R.string.choose_credentials_input_layout_error_invalid_username
+        val INPUT_PASSWORD = "INPUT_PASSWORD" to R.string.choose_credentials_input_layout_error_invalid_password
     }
 }
