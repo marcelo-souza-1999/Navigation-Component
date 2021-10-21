@@ -1,4 +1,4 @@
-package com.marcelo.roomcoroutines.extensions
+package com.marcelo.navigation.extensions
 
 import com.google.android.material.textfield.TextInputLayout
 

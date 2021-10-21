@@ -1,8 +1,9 @@
-package com.marcelo.roomcoroutines.ui.fragment.login
+package com.marcelo.navigation.ui.fragment.viewmodels
 
+import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.marcelo.roomcoroutines.R
+import com.marcelo.navigation.R
 
 class LoginViewModel : ViewModel() {
 
@@ -12,22 +13,31 @@ class LoginViewModel : ViewModel() {
         class InvalidAuth(val fields: List<Pair<String,Int>>) : AuthenticationState()
     }
 
-    val authenticationState = MutableLiveData<AuthenticationState>()
-
     var username: String = ""
+    var token: String = ""
+
+    private val _authenticationStateEvent = MutableLiveData<AuthenticationState>()
+    val authenticationStateEvent: LiveData<AuthenticationState>
+    get() = _authenticationStateEvent
 
     init {
         refuseAuthentication()
     }
 
     fun refuseAuthentication () {
-        authenticationState.value = AuthenticationState.Unauthenticated
+        _authenticationStateEvent.value = AuthenticationState.Unauthenticated
+    }
+
+    fun authenticateToken(token: String, username: String) {
+        this.token = token
+        this.username = username
+        _authenticationStateEvent.value = AuthenticationState.Authenticated
     }
 
     fun authentication(username: String, passowrd: String) {
         if (isValidForm(username, passowrd)) {
             this.username = username
-            authenticationState.value = AuthenticationState.Authenticated
+            _authenticationStateEvent.value = AuthenticationState.Authenticated
         }
     }
 
@@ -43,7 +53,7 @@ class LoginViewModel : ViewModel() {
         }
 
         if (invalidFields.isNotEmpty()) {
-            authenticationState.value = AuthenticationState.InvalidAuth(invalidFields)
+            _authenticationStateEvent.value = AuthenticationState.InvalidAuth(invalidFields)
             return false
         }
 

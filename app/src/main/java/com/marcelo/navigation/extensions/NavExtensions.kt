@@ -1,8 +1,8 @@
-package com.marcelo.roomcoroutines.extensions
+package com.marcelo.navigation.extensions
 
 import androidx.navigation.NavController
 import androidx.navigation.NavOptions
-import com.marcelo.roomcoroutines.R
+import com.marcelo.navigation.R
 
 private val navOptions = NavOptions.Builder()
     .setEnterAnim(R.anim.slide_in_right)

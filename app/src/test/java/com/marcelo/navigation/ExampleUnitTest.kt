@@ -1,4 +1,4 @@
-package com.marcelo.roomcoroutines
+package com.marcelo.navigation
 
 import org.junit.Test
 
