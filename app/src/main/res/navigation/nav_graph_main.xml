@@ -24,5 +24,35 @@
         android:id="@+id/loginFragment"
         android:name="com.marcelo.roomcoroutines.ui.fragment.login.LoginFragment"
         android:label="@string/login_title_action_bar"
-        tools:layout="@layout/login_fragment" />
+        tools:layout="@layout/login_fragment" >
+        <action
+            android:id="@+id/show_to_registrationNavigation"
+            app:destination="@id/registrationNavigation" />
+    </fragment>
+
+    <navigation
+        android:id="@+id/registrationNavigation"
+        app:startDestination="@id/registerFragment">
+        <fragment
+            android:id="@+id/registerFragment"
+            android:name="com.marcelo.roomcoroutines.ui.fragment.registration.RegisterFragment"
+            android:label="@string/profile_data_action_bar_title"
+            tools:layout="@layout/fragment_register">
+            <action
+                android:id="@+id/show_to_passwordFragment"
+                app:destination="@id/passwordFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/passwordFragment"
+            android:name="com.marcelo.roomcoroutines.ui.fragment.registration.PasswordFragment"
+            android:label="@string/choose_credentials_action_bar_title"
+            tools:layout="@layout/fragment_password">
+
+            <argument
+                android:name="name"
+                app:argType="string"
+                app:nullable="false"/>
+        </fragment>
+    </navigation>
 </navigation>
+
