@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:gravity="center"
     android:orientation="vertical"
     android:padding="16dp"
@@ -13,7 +13,8 @@
         android:id="@+id/inputLayoutLoginUsername"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/login_input_layout_hint_username">
+        android:hint="@string/login_input_layout_hint_username"
+        android:theme="@style/AppTextInputLayout">
 
         <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/inputLoginUsername"
@@ -30,6 +31,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/forms_default_margin_top"
         android:hint="@string/login_input_layout_hint_password"
+        android:theme="@style/AppTextInputLayout"
         app:passwordToggleEnabled="true">
 
         <androidx.appcompat.widget.AppCompatEditText
@@ -37,7 +39,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:imeOptions="actionDone"
-            android:inputType="textPassword"/>
+            android:inputType="textPassword" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -50,6 +52,7 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnSignUp"
+        style="@style/AppButton.SignUp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/forms_default_margin_top"
