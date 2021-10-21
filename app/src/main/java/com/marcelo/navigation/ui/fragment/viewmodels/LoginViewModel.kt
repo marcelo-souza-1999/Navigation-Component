@@ -1,9 +1,9 @@
-package com.marcelo.roomcoroutines.ui.fragment.login
+package com.marcelo.navigation.ui.fragment.viewmodels
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.marcelo.roomcoroutines.R
+import com.marcelo.navigation.R
 
 class LoginViewModel : ViewModel() {
 

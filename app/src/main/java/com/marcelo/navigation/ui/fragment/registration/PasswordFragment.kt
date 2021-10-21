@@ -1,4 +1,4 @@
-package com.marcelo.roomcoroutines.ui.fragment.registration
+package com.marcelo.navigation.ui.fragment.registration
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -13,9 +13,10 @@ import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.google.android.material.textfield.TextInputLayout
-import com.marcelo.roomcoroutines.R
-import com.marcelo.roomcoroutines.extensions.dismissError
-import com.marcelo.roomcoroutines.ui.fragment.login.LoginViewModel
+import com.marcelo.navigation.R
+import com.marcelo.navigation.extensions.dismissError
+import com.marcelo.navigation.ui.fragment.viewmodels.LoginViewModel
+import com.marcelo.navigation.ui.fragment.viewmodels.RegistrationViewModel
 import kotlinx.android.synthetic.main.fragment_password.*
 
 class PasswordFragment : Fragment() {

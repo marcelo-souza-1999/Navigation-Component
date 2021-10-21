@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/startFragment"
-        android:name="com.marcelo.roomcoroutines.ui.fragment.start.StartFragment"
+        android:name="com.marcelo.navigation.ui.fragment.start.StartFragment"
         android:label="@string/start_title_action_bar"
         tools:layout="@layout/fragment_start">
         <action
@@ -17,12 +17,12 @@
 
     <fragment
         android:id="@+id/profileFragment"
-        android:name="com.marcelo.roomcoroutines.ui.fragment.profile.ProfileFragment"
+        android:name="com.marcelo.navigation.ui.fragment.profile.ProfileFragment"
         android:label="@string/profile_title_action_bar"
         tools:layout="@layout/fragment_profile" />
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.marcelo.roomcoroutines.ui.fragment.login.LoginFragment"
+        android:name="com.marcelo.navigation.ui.fragment.login.LoginFragment"
         android:label="@string/login_title_action_bar"
         tools:layout="@layout/login_fragment" >
         <action
@@ -35,7 +35,7 @@
         app:startDestination="@id/registerFragment">
         <fragment
             android:id="@+id/registerFragment"
-            android:name="com.marcelo.roomcoroutines.ui.fragment.registration.RegisterFragment"
+            android:name="com.marcelo.navigation.ui.fragment.registration.RegisterFragment"
             android:label="@string/profile_data_action_bar_title"
             tools:layout="@layout/fragment_register">
             <action
@@ -44,7 +44,7 @@
         </fragment>
         <fragment
             android:id="@+id/passwordFragment"
-            android:name="com.marcelo.roomcoroutines.ui.fragment.registration.PasswordFragment"
+            android:name="com.marcelo.navigation.ui.fragment.registration.PasswordFragment"
             android:label="@string/choose_credentials_action_bar_title"
             tools:layout="@layout/fragment_password">
 

@@ -1,4 +1,4 @@
-package com.marcelo.roomcoroutines.ui.fragment.login
+package com.marcelo.navigation.ui.fragment.login
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -11,9 +11,10 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import com.google.android.material.textfield.TextInputLayout
-import com.marcelo.roomcoroutines.R
-import com.marcelo.roomcoroutines.extensions.dismissError
-import com.marcelo.roomcoroutines.extensions.navigateWithAnimations
+import com.marcelo.navigation.R
+import com.marcelo.navigation.extensions.dismissError
+import com.marcelo.navigation.extensions.navigateWithAnimations
+import com.marcelo.navigation.ui.fragment.viewmodels.LoginViewModel
 import kotlinx.android.synthetic.main.login_fragment.*
 
 class LoginFragment : Fragment() {

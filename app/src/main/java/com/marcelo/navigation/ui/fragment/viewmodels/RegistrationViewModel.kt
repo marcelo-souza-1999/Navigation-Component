@@ -1,9 +1,9 @@
-package com.marcelo.roomcoroutines.ui.fragment.registration
+package com.marcelo.navigation.ui.fragment.viewmodels
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.marcelo.roomcoroutines.R
+import com.marcelo.navigation.R
 
 class RegistrationViewModel : ViewModel() {
 
@@ -19,7 +19,6 @@ class RegistrationViewModel : ViewModel() {
     val registrationStateEvent: LiveData<RegistrationState> get() = _registrationStateEvent
 
     var authToken = ""
-    private set
 
     fun collectProfileData(name: String, bio: String) {
         if (isValidProfileData(name, bio)) {
