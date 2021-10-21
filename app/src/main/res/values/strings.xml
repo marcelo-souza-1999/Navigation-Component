@@ -4,5 +4,16 @@
     <string name="start_title_action_bar">Início</string>
     <string name="text_btn_start_fragment">Next</string>
     <string name="profile_title_action_bar">Perfil</string>
+    <!-- Strings in Login Fragment -->
+    <string name="login_action_bar_title">Login</string>
+    <string name="login_input_layout_hint_username">Nome de Usuário</string>
+    <string name="login_input_layout_hint_password">Senha</string>
+    <string name="login_button_text_sign_in">Acessar</string>
+    <string name="login_button_text_sign_up">Cadastrar-se</string>
+    <string name="login_input_layout_error_invalid_username">Nome de usuário inválido</string>
+    <string name="login_input_layout_error_invalid_password">Senha inválida</string>
+    <string name="login_title_action_bar">Faça seu Login</string>
 
+    <!-- Strings in Profile Fragment -->
+    <string name="text_welcome_profile">Welcome, %1$s</string>
 </resources>

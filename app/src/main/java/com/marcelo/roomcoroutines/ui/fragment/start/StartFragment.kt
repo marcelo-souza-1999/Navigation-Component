@@ -1,4 +1,4 @@
-package com.marcelo.roomcoroutines.ui.start
+package com.marcelo.roomcoroutines.ui.fragment.start
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -13,8 +13,10 @@ import kotlinx.android.synthetic.main.fragment_start.*
 class StartFragment : Fragment() {
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?,): View?
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?,
+    ): View?
     {
         return inflater.inflate(R.layout.fragment_start, container, false)
     }

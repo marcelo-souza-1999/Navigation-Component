@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/startFragment"
-        android:name="com.marcelo.roomcoroutines.ui.start.StartFragment"
+        android:name="com.marcelo.roomcoroutines.ui.fragment.start.StartFragment"
         android:label="@string/start_title_action_bar"
         tools:layout="@layout/fragment_start">
         <action
@@ -17,7 +17,12 @@
 
     <fragment
         android:id="@+id/profileFragment"
-        android:name="com.marcelo.roomcoroutines.ui.profile.ProfileFragment"
+        android:name="com.marcelo.roomcoroutines.ui.fragment.profile.ProfileFragment"
         android:label="@string/profile_title_action_bar"
         tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.marcelo.roomcoroutines.ui.fragment.login.LoginFragment"
+        android:label="@string/login_title_action_bar"
+        tools:layout="@layout/login_fragment" />
 </navigation>
